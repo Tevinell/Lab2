@@ -113,14 +113,15 @@ public class Main {
 
     public void CorrectInt(int count) {
         if (count < 0) {
-            out.println("Число не может быть отрицательным!");
+            out.println("Значение не может быть отрицательным!");
             System.exit(0);
         }
     }
 
     public void CorrectIndex(int index, int max) {
         if (index < 0 || index >= max) {
-            throw new IllegalArgumentException("Некорректный индекс!");
+            out.println("Некорректный индекс!");
+            System.exit(0);
         }
     }
 

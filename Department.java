@@ -1,14 +1,17 @@
-public class Department {
-    private String name;
+class Department {
+    private String Dname;
     private Employee boss;
 
-    public Department(String name, Employee boss) {
-        this.name = name;
+    public Department(String Dname) {
+        this.Dname = Dname;
+    }
+
+    public void setBoss(Employee boss) {
         this.boss = boss;
     }
 
-    public String getName() {
-        return name;
+    public String getDName() {
+        return Dname;
     }
 
     public Employee getBoss() {

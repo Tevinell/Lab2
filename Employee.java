@@ -1,25 +1,25 @@
-public class Employee {
-    private String name;
-    private Department depart;
+class Employee {
+    private String eName;
+    private Department department;
 
-    public Employee(String name, Department depart) {
-        this.name = name;
-        this.depart = depart;
+    public Employee(String eName, Department department) {
+        this.eName = eName;
+        this.department = department;
     }
 
-    public String getName() {
-        return name;
+    public String geteName() {
+        return eName;
     }
 
-    public Department getDepart() {
-        return depart;
+    public Department getDepartment() {
+        return department;
     }
 
     public String toString() {
-        if (depart.getBoss() == this) {
-            return name + " - начальник отдела " + depart.getName();
+        if (department.getBoss() == this) {
+            return eName + " - начальник отдела " + department.getDName();
         } else {
-            return name + " работает в отделе " + depart.getName() + ", начальник которого " + depart.getBoss().getName();
+            return eName + " работает в отделе " + department.getDName() + ", начальник которого " + department.getBoss().geteName();
         }
     }
 }
